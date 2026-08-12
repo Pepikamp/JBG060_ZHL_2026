@@ -40,10 +40,16 @@ Both that generated directory and `raw_data/` are excluded from Git.
 
 All Python dependencies and their versions are listed in [`requirements.txt`](requirements.txt).
 
-### 1. Clone the repository
+### 1. Fork and clone the repository
+
+First, open the [course repository](https://github.com/eerandi/JBG060_ZHL_2026) on GitHub. Select **Fork** in the
+top-right corner, choose your GitHub account as the owner, and create the fork. This gives you your own copy of the
+course repository where you can commit and push your work.
+
+Then clone **your fork** (replace `YOUR_GITHUB_USERNAME` with your GitHub username):
 
 ```bash
-git clone https://github.com/eerandi/JBG060_ZHL_2026.git
+git clone https://github.com/YOUR_GITHUB_USERNAME/JBG060_ZHL_2026.git
 cd JBG060_ZHL_2026
 ```
 
