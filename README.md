@@ -86,7 +86,7 @@ python -m pip install -r requirements.txt
 The data is deliberately **not stored in this Git repository**. Download it separately from SURFdrive:
 
 - Download: [JBG060-2026 data on SURFdrive](https://surfdrive.surf.nl/s/45yFwCAWmXb63Ec)
-- Password: `3F7rq7kEET`
+- Password is shared in the description of the assignment in Canvas
 
 Put the downloaded data in the `raw_data` folder.
 
