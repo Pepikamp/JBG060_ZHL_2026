@@ -9,7 +9,8 @@ exposure and impact data so that they can be used in later flood-risk analyses.
 The repository currently provides utilities for:
 
 - river discharge, lake levels, rainfall, runoff, evapotranspiration, and flood masks;
-- population, roads, health facilities, cattle, cropland, rangeland, GDP, and food-insecurity data;
+- administrative boundaries, population, roads, health facilities, cattle, cropland, rangeland, GDP, and
+  food-insecurity data;
 - spatial subsetting by coordinate or bounding box; and
 - converting selected raw inputs into pandas, GeoPandas, Xarray, or NetworkX objects.
 
@@ -90,6 +91,18 @@ The data is deliberately **not stored in this Git repository**. Download it sepa
 
 Put the downloaded data in the `raw_data` folder.
 
+The administrative-boundary loader expects the level 1 and level 2 GeoJSON files at:
+
+```text
+raw_data/
+`-- Administrative boundaries/
+    |-- ssd_admin1.geojson
+    `-- ssd_admin2.geojson
+```
+
+These files must be present whenever `processing_data.loading_impact_data` is imported because the module loads the
+administrative boundaries at import time.
+
 An overview of the supplied datasets and files is available in `Data_overview.xlsx`.
 
 ## Usage and examples
@@ -141,6 +154,24 @@ processing_data/evapotranspiration/ET_2024_9.475N_30.725E_processed.csv
 
 Most other functions return their results in memory and do not write files.
 
+To load South Sudan's administrative polygons and identify the state and county containing a coordinate:
+
+```python
+from processing_data.loading_impact_data import (
+    load_admin_boundaries,
+    locate_coordinate,
+)
+
+admin1, admin2 = load_admin_boundaries()
+admin1_name, admin2_name = locate_coordinate(long=27.386, lat=8.771)
+
+print(f"Loaded {len(admin1)} admin-level 1 and {len(admin2)} admin-level 2 areas")
+print(admin1_name, admin2_name)
+```
+
+Coordinates must be supplied as longitude followed by latitude. If a coordinate is not contained in a South Sudan
+polygon, the corresponding administrative name is returned as the string `"None"` and a warning is printed.
+
 ### Full demonstration scripts
 
 The modules also contain hard-coded examples and do not accept command-line options:
@@ -154,8 +185,8 @@ These commands run the full demonstrations:
 
 - `loading.py` works across 2000-2025, loads large NetCDF and Parquet datasets, and may process approximately 
 9,500 daily evapotranspiration files into annual CSV files.
-- `loading_impact_data.py` runs every impact-data example, requests a road network from OpenStreetMap, 
-and opens interactive plots.
+- `loading_impact_data.py` loads the administrative boundaries, demonstrates two coordinate lookups, runs every
+impact-data example, requests a road network from OpenStreetMap, and opens interactive plots.
 - The OpenStreetMap step needs an internet connection. Prefer the individual functions when working headlessly 
 or with limited time or memory.
 
@@ -180,6 +211,8 @@ If both classes occur for the same date and pixel, the unusual class takes prior
 
 | Function | Main input | Return value or generated output |
 |---|---|---|
+| `load_admin_boundaries()` | Admin-level 1 and 2 GeoJSON files | Two GeoDataFrames containing states and counties |
+| `locate_coordinate(long, lat)` | Longitude and latitude in decimal degrees | Admin-level 1 and 2 names containing the coordinate |
 | `load_worldpop_coordinate(longitude, latitude)` | WorldPop rasters for 2015-2025 | Population value by year at the selected pixel |
 | `load_worldpop_area(bbox)` | WorldPop rasters for 2015-2025 | Total population by year inside the bounding box |
 | `download_OSM_network(name)` | OpenStreetMap place name and live internet connection | NetworkX road graph; also attempts to save and plot nodes and edges |
@@ -207,8 +240,8 @@ Generated ET files, downloaded data, cached files, virtual environments, and Pyt
 Dataset descriptions, file overviews, provenance, and original provider information are documented in `Data_overview.xlsx`. 
 Consult the original providers for licenses, citation instructions, and usage restrictions.
 
-Supporting papers and data manuals are retained in [`literature/`](literature/). The project relies on pandas, NumPy, Xarray, 
-Dask, GeoPandas, Rasterio, rioxarray, NetworkX, OSMnx, and Matplotlib; see [`requirements.txt`](requirements.txt) 
+Supporting papers and data manuals are retained in [`literature/`](literature/). The project relies on pandas, NumPy, Xarray,
+Dask, GeoPandas, Shapely, Rasterio, rioxarray, NetworkX, OSMnx, and Matplotlib; see [`requirements.txt`](requirements.txt)
 for the complete version-pinned environment.
 
 ## Legal and ethical considerations

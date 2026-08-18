@@ -13,9 +13,51 @@ import osmnx as ox
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import os
+from shapely.geometry import Point
 
 
 #### NOTE: FIRST DOWNLOAD THE RAW DATA FROM SURFDRIVE
+
+def load_admin_boundaries() -> tuple[GeoDataFrame, GeoDataFrame]:
+    """
+    Load the administrative boundaries of South Sudan at admin levels 1 and 2.
+
+    The data was downloaded from
+    https://data.humdata.org/dataset/south-sudan-administrative-boundaries.
+    """
+    data_dir = Path('./raw_data/Administrative boundaries')
+    admin_boundaries_1 = gpd.read_file(data_dir / 'ssd_admin1.geojson')
+    admin_boundaries_2 = gpd.read_file(data_dir / 'ssd_admin2.geojson')
+
+    return admin_boundaries_1, admin_boundaries_2
+
+
+admin_boundaries_1, admin_boundaries_2 = load_admin_boundaries()
+
+
+def locate_coordinate(long: float, lat: float) -> tuple[str, str]:
+    """
+    Return the admin-level 1 and 2 names containing a longitude/latitude pair.
+    """
+    point = Point(long, lat)
+    admin1_hits = admin_boundaries_1[admin_boundaries_1.contains(point)]
+    admin2_hits = admin_boundaries_2[admin_boundaries_2.contains(point)]
+
+    admin1_name = "None"
+    admin2_name = "None"
+
+    if not admin1_hits.empty:
+        admin1_name = admin1_hits.iloc[0]['adm1_name']
+    else:
+        print("Warning! did not find an admin1 area for this coordinate")
+
+    if not admin2_hits.empty:
+        admin2_name = admin2_hits.iloc[0]['adm2_name']
+    else:
+        print("Warning! did not find an admin2 area for this coordinate")
+
+    return admin1_name, admin2_name
+
 
 def load_worldpop_coordinate(longitude: float, latitude: float) -> dict[int, pd.DataFrame] | float:
     """
@@ -337,7 +379,34 @@ def load_ipc_data() -> pd.DataFrame:
 def main():
     """Example usage"""
 
-    ### 1) population data
+    ## 1) Loading the administrative boundaries
+    admin1, admin2 = load_admin_boundaries()
+    print(admin1.columns.tolist())
+    print(admin1.head())
+
+    ## 2) Check the administrative area for a given coordinate
+
+    # Roughly Aweil
+    long, lat = 27.386, 8.771
+    admin1_aweil, admin2_aweil = locate_coordinate(long, lat)
+    print(
+        "Administrative area for coordinate (lon, lat) = ({}, {}) is: "
+        "admin1 = {}, admin2 = {}".format(
+            long, lat, admin1_aweil, admin2_aweil
+        )
+    )
+
+    # Not in South Sudan
+    long, lat = 26.6, 10.87
+    admin1, admin2 = locate_coordinate(long, lat)
+    print(
+        "For coordinate (lon, lat) = ({}, {}), NOT in South Sudan".format(
+            long, lat
+        )
+    )
+    print("Administrative area is: {}, {}".format(admin1, admin2))
+
+    ### 3) Population data
 
     ## Loading population data at a single location
     # Where there are people
@@ -367,7 +436,7 @@ def main():
     for year, count in pop_area.items():
         print(f"Year {year} has total population count of {count}")
 
-    ### 2) Road network from Open Streetmap
+    ### 4) Road network from Open Streetmap
     city_name = "Malakal, South Sudan"
 
     ## Download network once:
@@ -376,10 +445,11 @@ def main():
     ## Then plotting the network
     G = plot_network(f"{city_name}")
 
-    ### 3) Loading the health facility data
+    ### 5) Loading the health facility data
     hf = load_health_facilities()
+    print(f"Loaded {len(hf)} health facilities in South Sudan")
 
-    ### 4) Grazing cattle
+    ### 6) Grazing cattle
     df, longitudes, latitudes = load_cattle()
     lon_value = longitudes[15]
     grazing_lats = latitudes[np.nonzero(df[lon_value].notna())]
@@ -388,7 +458,7 @@ def main():
 
     print(f"at (long, lat) = ({lon_value}, {lat_value}), there are {df.loc[lat_value, lon_value]} cattle grazing")
 
-    ## 5) Cropland mask
+    ## 7) Cropland mask
     bbox_ssd = dict()
     bbox_ssd['lon_min'] = 24
     bbox_ssd['lat_min'] = 3
@@ -404,7 +474,7 @@ def main():
     plt.title("Crop Mask (area percentage)")
     plt.show()
 
-    ### 6) Rangeland mask
+    ### 8) Rangeland mask
     rangeland_da = load_farmland_mask(bbox_ssd, "rangeland")
     rangeland_val = cropmask_da.sel(latitude=target_lat, longitude=target_lon, method="nearest")
     print(f"At (lat, long) = ({target_lat}, {target_lon}) , a % of {rangeland_val} is rangeland")
@@ -413,11 +483,11 @@ def main():
     plt.title("Rangeland Mask (area percentage)")
     plt.show()
 
-    ### 7) Load GDP data
+    ### 9) Load GDP data
     GDP_dict = load_GDP()
     print(GDP_dict)
 
-    ### 8) Load GDP data
+    ### 10) Load IPC data
     phase3plus = load_ipc_data()
     print(phase3plus)
 
