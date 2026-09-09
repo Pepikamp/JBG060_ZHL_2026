@@ -137,23 +137,27 @@ def load_worldpop_area(bbox: dict) -> dict[int, pd.DataFrame]:
 
 def download_OSM_network(name: str) -> MultiDiGraph:
     """
-    OpenStreetMap (OSM) has a built-in Python library, with which road networks can be downloaded.
-
-    Here, we provide an example how to do so for the city Malakal, extracting the "drive" network.
+    Download a drivable OpenStreetMap road network for a given place,
+    save the nodes and edges as shapefiles, and return the graph.
     """
-    output_dir = f'./raw_data/OSM/{name}'
-    os.makedirs(output_dir, exist_ok=True)
 
+    # Create output directory
+    output_dir = Path('./raw_data/OSM') / name
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Download road network
     G = ox.graph_from_place(name, network_type='drive')
 
-    # Convert networkx graph
+    # Convert graph to GeoDataFrames
     nodes, edges = ox.graph_to_gdfs(G)
 
-    # Save file
-    nodes.to_file(output_dir + './nodes.shp')
-    edges.to_file(output_dir + './edges.shp')
-    print(f"Graph files saved in {output_dir}")
+    # Save nodes and edges
+    nodes.to_file(output_dir / 'nodes.shp')
+    edges.to_file(output_dir / 'edges.shp')
 
+    print(f"Graph files saved in: {output_dir}")
+
+    # Plot network
     ox.plot_graph(G)
 
     return G
