@@ -1,0 +1,5 @@
+exposure,spearman_rho,p_value,n_dates
+Population,0.8661198142190546,0.0,3996
+Cropland (km²),0.8300342920926571,0.0,3996
+Rangeland (km²),0.9759288885976025,0.0,3996
+Cattle exposure index,0.9805628653767046,0.0,3996
