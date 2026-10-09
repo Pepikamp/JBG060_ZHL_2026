@@ -1,0 +1,31 @@
+period,weather_variable,lag_days,correlation,n_days
+All dates,precipitation,0,-0.5377060662487665,360
+All dates,precipitation,3,-0.4931374061573221,357
+All dates,precipitation,7,-0.4536071799949672,353
+All dates,precipitation,10,-0.4144266534552149,350
+All dates,precipitation,14,-0.34022521346680323,346
+All dates,runoff,0,-0.38373332477988314,360
+All dates,runoff,3,-0.3319248348308351,357
+All dates,runoff,7,-0.3287719170076107,353
+All dates,runoff,10,-0.3010300570631827,350
+All dates,runoff,14,-0.25704130015650606,346
+May–October,precipitation,0,-0.25735998006030475,184
+May–October,precipitation,3,-0.13871552033743303,184
+May–October,precipitation,7,-0.07963440548501032,184
+May–October,precipitation,10,-0.036593264619700444,184
+May–October,precipitation,14,0.08581062134684403,184
+May–October,runoff,0,-0.14382538161329808,184
+May–October,runoff,3,-0.033425079384860334,184
+May–October,runoff,7,-0.03709529807225197,184
+May–October,runoff,10,0.008894695221689708,184
+May–October,runoff,14,0.08326450054434525,184
+November–April,precipitation,0,-0.3886299522108957,176
+November–April,precipitation,3,-0.35004434879370655,173
+November–April,precipitation,7,-0.24649455815520988,169
+November–April,precipitation,10,-0.12889892213617055,166
+November–April,precipitation,14,-0.04918706801201686,162
+November–April,runoff,0,-0.30846674309717276,176
+November–April,runoff,3,-0.2907027182379,173
+November–April,runoff,7,-0.2265795009803521,169
+November–April,runoff,10,-0.1699781932088018,166
+November–April,runoff,14,-0.10178198260884282,162
