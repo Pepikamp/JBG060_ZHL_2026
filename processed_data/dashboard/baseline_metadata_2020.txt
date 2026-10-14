@@ -1,0 +1,10 @@
+Baseline pilot metadata
+Year: 2020
+Study areas: Ayod, Bor South, Malakal
+Weather: ERA5 total precipitation (tp) and runoff (ro), converted from metres to millimetres.
+Spatial aggregation: grid-cell intersections weighted by area in EPSG:6933.
+Flood columns: recorded detections in compact recurring/unusual flood-mask product, not flooded area, severity, damage, or verified onset.
+Zero counts: no detections recorded in the loaded data for that area-date; not proof of no flooding.
+Coverage: footprint overlap uses approximate tile rectangles only; it does not prove valid daily observation coverage.
+Lag analysis: exploratory Spearman association; weather at t is compared with unusual detections at t + lag. Not a validated forecast.
+Wet-season sensitivity: May-October is an exploratory subset and should be checked against local climatology.
