@@ -1,0 +1,241 @@
+target,lead,method,FN,FP,p_value_misses_vs_false_alarms,p_value_year_bootstrap,miss_share_lo,miss_share_hi,vs,model_FN,rule_FN,model_FP,rule_FP,breakeven_w,verdict
+ext_ayod,1,model (ar+lake),9,7,0.804,0.78,0.0,1.0,rule: last anomaly persists,9,4,7,2,,rule better at any cost ratio
+ext_ayod,1,model (ar+lake),9,7,0.804,0.78,0.0,1.0,rule: 12-mo mean anomaly,9,9,7,9,,model better at any cost ratio
+ext_ayod,1,model (ar+lake),9,7,0.804,0.78,0.0,1.0,rule: seasonal average,9,39,7,0,0.233,model better if a miss costs MORE than w* false alarms
+ext_ayod,1,rule: last anomaly persists,4,2,0.688,0.167,0.5,1.0,rule: last anomaly persists,9,4,7,2,,rule better at any cost ratio
+ext_ayod,1,rule: last anomaly persists,4,2,0.688,0.167,0.5,1.0,rule: 12-mo mean anomaly,9,9,7,9,,model better at any cost ratio
+ext_ayod,1,rule: last anomaly persists,4,2,0.688,0.167,0.5,1.0,rule: seasonal average,9,39,7,0,0.233,model better if a miss costs MORE than w* false alarms
+ext_ayod,1,rule: 12-mo mean anomaly,9,9,1.0,0.953,0.0,1.0,rule: last anomaly persists,9,4,7,2,,rule better at any cost ratio
+ext_ayod,1,rule: 12-mo mean anomaly,9,9,1.0,0.953,0.0,1.0,rule: 12-mo mean anomaly,9,9,7,9,,model better at any cost ratio
+ext_ayod,1,rule: 12-mo mean anomaly,9,9,1.0,0.953,0.0,1.0,rule: seasonal average,9,39,7,0,0.233,model better if a miss costs MORE than w* false alarms
+ext_ayod,1,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: last anomaly persists,9,4,7,2,,rule better at any cost ratio
+ext_ayod,1,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: 12-mo mean anomaly,9,9,7,9,,model better at any cost ratio
+ext_ayod,1,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: seasonal average,9,39,7,0,0.233,model better if a miss costs MORE than w* false alarms
+ext_ayod,2,model (ar+lake),14,8,0.286,0.58,0.0,1.0,rule: last anomaly persists,14,8,8,6,,rule better at any cost ratio
+ext_ayod,2,model (ar+lake),14,8,0.286,0.58,0.0,1.0,rule: 12-mo mean anomaly,14,12,8,10,1.0,model better if a miss costs LESS than w* false alarms
+ext_ayod,2,model (ar+lake),14,8,0.286,0.58,0.0,1.0,rule: seasonal average,14,39,8,0,0.32,model better if a miss costs MORE than w* false alarms
+ext_ayod,2,rule: last anomaly persists,8,6,0.791,0.771,0.114,0.722,rule: last anomaly persists,14,8,8,6,,rule better at any cost ratio
+ext_ayod,2,rule: last anomaly persists,8,6,0.791,0.771,0.114,0.722,rule: 12-mo mean anomaly,14,12,8,10,1.0,model better if a miss costs LESS than w* false alarms
+ext_ayod,2,rule: last anomaly persists,8,6,0.791,0.771,0.114,0.722,rule: seasonal average,14,39,8,0,0.32,model better if a miss costs MORE than w* false alarms
+ext_ayod,2,rule: 12-mo mean anomaly,12,10,0.832,0.838,0.0,0.966,rule: last anomaly persists,14,8,8,6,,rule better at any cost ratio
+ext_ayod,2,rule: 12-mo mean anomaly,12,10,0.832,0.838,0.0,0.966,rule: 12-mo mean anomaly,14,12,8,10,1.0,model better if a miss costs LESS than w* false alarms
+ext_ayod,2,rule: 12-mo mean anomaly,12,10,0.832,0.838,0.0,0.966,rule: seasonal average,14,39,8,0,0.32,model better if a miss costs MORE than w* false alarms
+ext_ayod,2,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: last anomaly persists,14,8,8,6,,rule better at any cost ratio
+ext_ayod,2,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: 12-mo mean anomaly,14,12,8,10,1.0,model better if a miss costs LESS than w* false alarms
+ext_ayod,2,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: seasonal average,14,39,8,0,0.32,model better if a miss costs MORE than w* false alarms
+ext_ayod,3,model (ar+lake),16,8,0.152,0.475,0.0,1.0,rule: last anomaly persists,16,12,8,8,,rule better at any cost ratio
+ext_ayod,3,model (ar+lake),16,8,0.152,0.475,0.0,1.0,rule: 12-mo mean anomaly,16,16,8,9,,model better at any cost ratio
+ext_ayod,3,model (ar+lake),16,8,0.152,0.475,0.0,1.0,rule: seasonal average,16,39,8,0,0.348,model better if a miss costs MORE than w* false alarms
+ext_ayod,3,rule: last anomaly persists,12,8,0.503,0.648,0.0,0.941,rule: last anomaly persists,16,12,8,8,,rule better at any cost ratio
+ext_ayod,3,rule: last anomaly persists,12,8,0.503,0.648,0.0,0.941,rule: 12-mo mean anomaly,16,16,8,9,,model better at any cost ratio
+ext_ayod,3,rule: last anomaly persists,12,8,0.503,0.648,0.0,0.941,rule: seasonal average,16,39,8,0,0.348,model better if a miss costs MORE than w* false alarms
+ext_ayod,3,rule: 12-mo mean anomaly,16,9,0.23,0.553,0.2,1.0,rule: last anomaly persists,16,12,8,8,,rule better at any cost ratio
+ext_ayod,3,rule: 12-mo mean anomaly,16,9,0.23,0.553,0.2,1.0,rule: 12-mo mean anomaly,16,16,8,9,,model better at any cost ratio
+ext_ayod,3,rule: 12-mo mean anomaly,16,9,0.23,0.553,0.2,1.0,rule: seasonal average,16,39,8,0,0.348,model better if a miss costs MORE than w* false alarms
+ext_ayod,3,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: last anomaly persists,16,12,8,8,,rule better at any cost ratio
+ext_ayod,3,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: 12-mo mean anomaly,16,16,8,9,,model better at any cost ratio
+ext_ayod,3,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: seasonal average,16,39,8,0,0.348,model better if a miss costs MORE than w* false alarms
+ext_ayod,4,model (ar+lake),18,8,0.076,0.501,0.0,1.0,rule: last anomaly persists,18,14,8,9,0.25,model better if a miss costs LESS than w* false alarms
+ext_ayod,4,model (ar+lake),18,8,0.076,0.501,0.0,1.0,rule: 12-mo mean anomaly,18,19,8,9,,model better at any cost ratio
+ext_ayod,4,model (ar+lake),18,8,0.076,0.501,0.0,1.0,rule: seasonal average,18,39,8,0,0.381,model better if a miss costs MORE than w* false alarms
+ext_ayod,4,rule: last anomaly persists,14,9,0.405,0.566,0.0,1.0,rule: last anomaly persists,18,14,8,9,0.25,model better if a miss costs LESS than w* false alarms
+ext_ayod,4,rule: last anomaly persists,14,9,0.405,0.566,0.0,1.0,rule: 12-mo mean anomaly,18,19,8,9,,model better at any cost ratio
+ext_ayod,4,rule: last anomaly persists,14,9,0.405,0.566,0.0,1.0,rule: seasonal average,18,39,8,0,0.381,model better if a miss costs MORE than w* false alarms
+ext_ayod,4,rule: 12-mo mean anomaly,19,9,0.087,0.419,0.265,1.0,rule: last anomaly persists,18,14,8,9,0.25,model better if a miss costs LESS than w* false alarms
+ext_ayod,4,rule: 12-mo mean anomaly,19,9,0.087,0.419,0.265,1.0,rule: 12-mo mean anomaly,18,19,8,9,,model better at any cost ratio
+ext_ayod,4,rule: 12-mo mean anomaly,19,9,0.087,0.419,0.265,1.0,rule: seasonal average,18,39,8,0,0.381,model better if a miss costs MORE than w* false alarms
+ext_ayod,4,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: last anomaly persists,18,14,8,9,0.25,model better if a miss costs LESS than w* false alarms
+ext_ayod,4,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: 12-mo mean anomaly,18,19,8,9,,model better at any cost ratio
+ext_ayod,4,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: seasonal average,18,39,8,0,0.381,model better if a miss costs MORE than w* false alarms
+ext_ayod,6,model (ar+lake),18,9,0.122,0.556,0.0,1.0,rule: last anomaly persists,18,18,9,10,,model better at any cost ratio
+ext_ayod,6,model (ar+lake),18,9,0.122,0.556,0.0,1.0,rule: 12-mo mean anomaly,18,24,9,10,,model better at any cost ratio
+ext_ayod,6,model (ar+lake),18,9,0.122,0.556,0.0,1.0,rule: seasonal average,18,39,9,0,0.429,model better if a miss costs MORE than w* false alarms
+ext_ayod,6,rule: last anomaly persists,18,10,0.185,0.374,0.25,1.0,rule: last anomaly persists,18,18,9,10,,model better at any cost ratio
+ext_ayod,6,rule: last anomaly persists,18,10,0.185,0.374,0.25,1.0,rule: 12-mo mean anomaly,18,24,9,10,,model better at any cost ratio
+ext_ayod,6,rule: last anomaly persists,18,10,0.185,0.374,0.25,1.0,rule: seasonal average,18,39,9,0,0.429,model better if a miss costs MORE than w* false alarms
+ext_ayod,6,rule: 12-mo mean anomaly,24,10,0.024,0.328,0.286,1.0,rule: last anomaly persists,18,18,9,10,,model better at any cost ratio
+ext_ayod,6,rule: 12-mo mean anomaly,24,10,0.024,0.328,0.286,1.0,rule: 12-mo mean anomaly,18,24,9,10,,model better at any cost ratio
+ext_ayod,6,rule: 12-mo mean anomaly,24,10,0.024,0.328,0.286,1.0,rule: seasonal average,18,39,9,0,0.429,model better if a miss costs MORE than w* false alarms
+ext_ayod,6,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: last anomaly persists,18,18,9,10,,model better at any cost ratio
+ext_ayod,6,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: 12-mo mean anomaly,18,24,9,10,,model better at any cost ratio
+ext_ayod,6,rule: seasonal average,39,0,0.0,0.0,1.0,1.0,rule: seasonal average,18,39,9,0,0.429,model better if a miss costs MORE than w* false alarms
+ext_bor_south,1,model (ar+lake),27,16,0.126,0.454,0.318,0.896,rule: last anomaly persists,27,12,16,20,0.267,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,model (ar+lake),27,16,0.126,0.454,0.318,0.896,rule: 12-mo mean anomaly,27,12,16,39,1.533,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,model (ar+lake),27,16,0.126,0.454,0.318,0.896,rule: seasonal average,27,38,16,2,1.273,model better if a miss costs MORE than w* false alarms
+ext_bor_south,1,rule: last anomaly persists,12,20,0.215,0.036,0.214,0.486,rule: last anomaly persists,27,12,16,20,0.267,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,rule: last anomaly persists,12,20,0.215,0.036,0.214,0.486,rule: 12-mo mean anomaly,27,12,16,39,1.533,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,rule: last anomaly persists,12,20,0.215,0.036,0.214,0.486,rule: seasonal average,27,38,16,2,1.273,model better if a miss costs MORE than w* false alarms
+ext_bor_south,1,rule: 12-mo mean anomaly,12,39,0.0,0.01,0.111,0.405,rule: last anomaly persists,27,12,16,20,0.267,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,rule: 12-mo mean anomaly,12,39,0.0,0.01,0.111,0.405,rule: 12-mo mean anomaly,27,12,16,39,1.533,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,rule: 12-mo mean anomaly,12,39,0.0,0.01,0.111,0.405,rule: seasonal average,27,38,16,2,1.273,model better if a miss costs MORE than w* false alarms
+ext_bor_south,1,rule: seasonal average,38,2,0.0,0.0,0.844,1.0,rule: last anomaly persists,27,12,16,20,0.267,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,rule: seasonal average,38,2,0.0,0.0,0.844,1.0,rule: 12-mo mean anomaly,27,12,16,39,1.533,model better if a miss costs LESS than w* false alarms
+ext_bor_south,1,rule: seasonal average,38,2,0.0,0.0,0.844,1.0,rule: seasonal average,27,38,16,2,1.273,model better if a miss costs MORE than w* false alarms
+ext_bor_south,2,model (ar+lake),29,12,0.012,0.172,0.406,0.954,rule: last anomaly persists,29,18,12,27,1.364,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,model (ar+lake),29,12,0.012,0.172,0.406,0.954,rule: 12-mo mean anomaly,29,15,12,41,2.071,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,model (ar+lake),29,12,0.012,0.172,0.406,0.954,rule: seasonal average,29,38,12,2,1.111,model better if a miss costs MORE than w* false alarms
+ext_bor_south,2,rule: last anomaly persists,18,27,0.233,0.037,0.314,0.488,rule: last anomaly persists,29,18,12,27,1.364,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,rule: last anomaly persists,18,27,0.233,0.037,0.314,0.488,rule: 12-mo mean anomaly,29,15,12,41,2.071,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,rule: last anomaly persists,18,27,0.233,0.037,0.314,0.488,rule: seasonal average,29,38,12,2,1.111,model better if a miss costs MORE than w* false alarms
+ext_bor_south,2,rule: 12-mo mean anomaly,15,41,0.001,0.019,0.133,0.447,rule: last anomaly persists,29,18,12,27,1.364,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,rule: 12-mo mean anomaly,15,41,0.001,0.019,0.133,0.447,rule: 12-mo mean anomaly,29,15,12,41,2.071,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,rule: 12-mo mean anomaly,15,41,0.001,0.019,0.133,0.447,rule: seasonal average,29,38,12,2,1.111,model better if a miss costs MORE than w* false alarms
+ext_bor_south,2,rule: seasonal average,38,2,0.0,0.0,0.846,1.0,rule: last anomaly persists,29,18,12,27,1.364,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,rule: seasonal average,38,2,0.0,0.0,0.846,1.0,rule: 12-mo mean anomaly,29,15,12,41,2.071,model better if a miss costs LESS than w* false alarms
+ext_bor_south,2,rule: seasonal average,38,2,0.0,0.0,0.846,1.0,rule: seasonal average,29,38,12,2,1.111,model better if a miss costs MORE than w* false alarms
+ext_bor_south,3,model (ar+lake),32,12,0.004,0.194,0.404,1.0,rule: last anomaly persists,32,18,12,35,1.643,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,model (ar+lake),32,12,0.004,0.194,0.404,1.0,rule: 12-mo mean anomaly,32,16,12,39,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,model (ar+lake),32,12,0.004,0.194,0.404,1.0,rule: seasonal average,32,38,12,2,1.667,model better if a miss costs MORE than w* false alarms
+ext_bor_south,3,rule: last anomaly persists,18,35,0.027,0.002,0.232,0.446,rule: last anomaly persists,32,18,12,35,1.643,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,rule: last anomaly persists,18,35,0.027,0.002,0.232,0.446,rule: 12-mo mean anomaly,32,16,12,39,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,rule: last anomaly persists,18,35,0.027,0.002,0.232,0.446,rule: seasonal average,32,38,12,2,1.667,model better if a miss costs MORE than w* false alarms
+ext_bor_south,3,rule: 12-mo mean anomaly,16,39,0.003,0.03,0.143,0.476,rule: last anomaly persists,32,18,12,35,1.643,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,rule: 12-mo mean anomaly,16,39,0.003,0.03,0.143,0.476,rule: 12-mo mean anomaly,32,16,12,39,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,rule: 12-mo mean anomaly,16,39,0.003,0.03,0.143,0.476,rule: seasonal average,32,38,12,2,1.667,model better if a miss costs MORE than w* false alarms
+ext_bor_south,3,rule: seasonal average,38,2,0.0,0.0,0.84,1.0,rule: last anomaly persists,32,18,12,35,1.643,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,rule: seasonal average,38,2,0.0,0.0,0.84,1.0,rule: 12-mo mean anomaly,32,16,12,39,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,3,rule: seasonal average,38,2,0.0,0.0,0.84,1.0,rule: seasonal average,32,38,12,2,1.667,model better if a miss costs MORE than w* false alarms
+ext_bor_south,4,model (ar+lake),33,11,0.001,0.116,0.441,1.0,rule: last anomaly persists,33,19,11,27,1.143,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,model (ar+lake),33,11,0.001,0.116,0.441,1.0,rule: 12-mo mean anomaly,33,17,11,38,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,model (ar+lake),33,11,0.001,0.116,0.441,1.0,rule: seasonal average,33,38,11,2,1.8,model better if a miss costs MORE than w* false alarms
+ext_bor_south,4,rule: last anomaly persists,19,27,0.302,0.269,0.286,0.556,rule: last anomaly persists,33,19,11,27,1.143,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,rule: last anomaly persists,19,27,0.302,0.269,0.286,0.556,rule: 12-mo mean anomaly,33,17,11,38,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,rule: last anomaly persists,19,27,0.302,0.269,0.286,0.556,rule: seasonal average,33,38,11,2,1.8,model better if a miss costs MORE than w* false alarms
+ext_bor_south,4,rule: 12-mo mean anomaly,17,38,0.006,0.087,0.158,0.525,rule: last anomaly persists,33,19,11,27,1.143,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,rule: 12-mo mean anomaly,17,38,0.006,0.087,0.158,0.525,rule: 12-mo mean anomaly,33,17,11,38,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,rule: 12-mo mean anomaly,17,38,0.006,0.087,0.158,0.525,rule: seasonal average,33,38,11,2,1.8,model better if a miss costs MORE than w* false alarms
+ext_bor_south,4,rule: seasonal average,38,2,0.0,0.0,0.844,1.0,rule: last anomaly persists,33,19,11,27,1.143,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,rule: seasonal average,38,2,0.0,0.0,0.844,1.0,rule: 12-mo mean anomaly,33,17,11,38,1.688,model better if a miss costs LESS than w* false alarms
+ext_bor_south,4,rule: seasonal average,38,2,0.0,0.0,0.844,1.0,rule: seasonal average,33,38,11,2,1.8,model better if a miss costs MORE than w* false alarms
+ext_bor_south,6,model (ar+lake),29,10,0.003,0.113,0.451,1.0,rule: last anomaly persists,29,17,10,29,1.583,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,model (ar+lake),29,10,0.003,0.113,0.451,1.0,rule: 12-mo mean anomaly,29,16,10,37,2.077,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,model (ar+lake),29,10,0.003,0.113,0.451,1.0,rule: seasonal average,29,38,10,2,0.889,model better if a miss costs MORE than w* false alarms
+ext_bor_south,6,rule: last anomaly persists,17,29,0.104,0.132,0.216,0.537,rule: last anomaly persists,29,17,10,29,1.583,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,rule: last anomaly persists,17,29,0.104,0.132,0.216,0.537,rule: 12-mo mean anomaly,29,16,10,37,2.077,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,rule: last anomaly persists,17,29,0.104,0.132,0.216,0.537,rule: seasonal average,29,38,10,2,0.889,model better if a miss costs MORE than w* false alarms
+ext_bor_south,6,rule: 12-mo mean anomaly,16,37,0.005,0.195,0.127,0.595,rule: last anomaly persists,29,17,10,29,1.583,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,rule: 12-mo mean anomaly,16,37,0.005,0.195,0.127,0.595,rule: 12-mo mean anomaly,29,16,10,37,2.077,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,rule: 12-mo mean anomaly,16,37,0.005,0.195,0.127,0.595,rule: seasonal average,29,38,10,2,0.889,model better if a miss costs MORE than w* false alarms
+ext_bor_south,6,rule: seasonal average,38,2,0.0,0.0,0.842,1.0,rule: last anomaly persists,29,17,10,29,1.583,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,rule: seasonal average,38,2,0.0,0.0,0.842,1.0,rule: 12-mo mean anomaly,29,16,10,37,2.077,model better if a miss costs LESS than w* false alarms
+ext_bor_south,6,rule: seasonal average,38,2,0.0,0.0,0.842,1.0,rule: seasonal average,29,38,10,2,0.889,model better if a miss costs MORE than w* false alarms
+ext_malakal,1,model (ar+lake),13,15,0.851,0.859,0.182,0.81,rule: last anomaly persists,13,10,15,12,,rule better at any cost ratio
+ext_malakal,1,model (ar+lake),13,15,0.851,0.859,0.182,0.81,rule: 12-mo mean anomaly,13,6,15,19,0.571,model better if a miss costs LESS than w* false alarms
+ext_malakal,1,model (ar+lake),13,15,0.851,0.859,0.182,0.81,rule: seasonal average,13,19,15,4,1.833,model better if a miss costs MORE than w* false alarms
+ext_malakal,1,rule: last anomaly persists,10,12,0.832,0.7,0.292,0.667,rule: last anomaly persists,13,10,15,12,,rule better at any cost ratio
+ext_malakal,1,rule: last anomaly persists,10,12,0.832,0.7,0.292,0.667,rule: 12-mo mean anomaly,13,6,15,19,0.571,model better if a miss costs LESS than w* false alarms
+ext_malakal,1,rule: last anomaly persists,10,12,0.832,0.7,0.292,0.667,rule: seasonal average,13,19,15,4,1.833,model better if a miss costs MORE than w* false alarms
+ext_malakal,1,rule: 12-mo mean anomaly,6,19,0.015,0.187,0.038,0.667,rule: last anomaly persists,13,10,15,12,,rule better at any cost ratio
+ext_malakal,1,rule: 12-mo mean anomaly,6,19,0.015,0.187,0.038,0.667,rule: 12-mo mean anomaly,13,6,15,19,0.571,model better if a miss costs LESS than w* false alarms
+ext_malakal,1,rule: 12-mo mean anomaly,6,19,0.015,0.187,0.038,0.667,rule: seasonal average,13,19,15,4,1.833,model better if a miss costs MORE than w* false alarms
+ext_malakal,1,rule: seasonal average,19,4,0.003,0.039,0.538,0.966,rule: last anomaly persists,13,10,15,12,,rule better at any cost ratio
+ext_malakal,1,rule: seasonal average,19,4,0.003,0.039,0.538,0.966,rule: 12-mo mean anomaly,13,6,15,19,0.571,model better if a miss costs LESS than w* false alarms
+ext_malakal,1,rule: seasonal average,19,4,0.003,0.039,0.538,0.966,rule: seasonal average,13,19,15,4,1.833,model better if a miss costs MORE than w* false alarms
+ext_malakal,2,model (ar+lake),13,18,0.473,0.744,0.15,0.833,rule: last anomaly persists,13,9,18,17,,rule better at any cost ratio
+ext_malakal,2,model (ar+lake),13,18,0.473,0.744,0.15,0.833,rule: 12-mo mean anomaly,13,6,18,19,0.143,model better if a miss costs LESS than w* false alarms
+ext_malakal,2,model (ar+lake),13,18,0.473,0.744,0.15,0.833,rule: seasonal average,13,19,18,4,2.333,model better if a miss costs MORE than w* false alarms
+ext_malakal,2,rule: last anomaly persists,9,17,0.169,0.065,0.167,0.5,rule: last anomaly persists,13,9,18,17,,rule better at any cost ratio
+ext_malakal,2,rule: last anomaly persists,9,17,0.169,0.065,0.167,0.5,rule: 12-mo mean anomaly,13,6,18,19,0.143,model better if a miss costs LESS than w* false alarms
+ext_malakal,2,rule: last anomaly persists,9,17,0.169,0.065,0.167,0.5,rule: seasonal average,13,19,18,4,2.333,model better if a miss costs MORE than w* false alarms
+ext_malakal,2,rule: 12-mo mean anomaly,6,19,0.015,0.172,0.038,0.621,rule: last anomaly persists,13,9,18,17,,rule better at any cost ratio
+ext_malakal,2,rule: 12-mo mean anomaly,6,19,0.015,0.172,0.038,0.621,rule: 12-mo mean anomaly,13,6,18,19,0.143,model better if a miss costs LESS than w* false alarms
+ext_malakal,2,rule: 12-mo mean anomaly,6,19,0.015,0.172,0.038,0.621,rule: seasonal average,13,19,18,4,2.333,model better if a miss costs MORE than w* false alarms
+ext_malakal,2,rule: seasonal average,19,4,0.003,0.061,0.5,0.962,rule: last anomaly persists,13,9,18,17,,rule better at any cost ratio
+ext_malakal,2,rule: seasonal average,19,4,0.003,0.061,0.5,0.962,rule: 12-mo mean anomaly,13,6,18,19,0.143,model better if a miss costs LESS than w* false alarms
+ext_malakal,2,rule: seasonal average,19,4,0.003,0.061,0.5,0.962,rule: seasonal average,13,19,18,4,2.333,model better if a miss costs MORE than w* false alarms
+ext_malakal,3,model (ar+lake),13,17,0.585,0.766,0.174,0.883,rule: last anomaly persists,13,14,17,22,,model better at any cost ratio
+ext_malakal,3,model (ar+lake),13,17,0.585,0.766,0.174,0.883,rule: 12-mo mean anomaly,13,6,17,19,0.286,model better if a miss costs LESS than w* false alarms
+ext_malakal,3,model (ar+lake),13,17,0.585,0.766,0.174,0.883,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,3,rule: last anomaly persists,14,22,0.243,0.144,0.214,0.524,rule: last anomaly persists,13,14,17,22,,model better at any cost ratio
+ext_malakal,3,rule: last anomaly persists,14,22,0.243,0.144,0.214,0.524,rule: 12-mo mean anomaly,13,6,17,19,0.286,model better if a miss costs LESS than w* false alarms
+ext_malakal,3,rule: last anomaly persists,14,22,0.243,0.144,0.214,0.524,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,3,rule: 12-mo mean anomaly,6,19,0.015,0.197,0.038,0.667,rule: last anomaly persists,13,14,17,22,,model better at any cost ratio
+ext_malakal,3,rule: 12-mo mean anomaly,6,19,0.015,0.197,0.038,0.667,rule: 12-mo mean anomaly,13,6,17,19,0.286,model better if a miss costs LESS than w* false alarms
+ext_malakal,3,rule: 12-mo mean anomaly,6,19,0.015,0.197,0.038,0.667,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,3,rule: seasonal average,19,4,0.003,0.06,0.5,0.966,rule: last anomaly persists,13,14,17,22,,model better at any cost ratio
+ext_malakal,3,rule: seasonal average,19,4,0.003,0.06,0.5,0.966,rule: 12-mo mean anomaly,13,6,17,19,0.286,model better if a miss costs LESS than w* false alarms
+ext_malakal,3,rule: seasonal average,19,4,0.003,0.06,0.5,0.966,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,4,model (ar+lake),13,17,0.585,0.789,0.162,1.0,rule: last anomaly persists,13,12,17,23,6.0,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,model (ar+lake),13,17,0.585,0.789,0.162,1.0,rule: 12-mo mean anomaly,13,7,17,19,0.333,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,model (ar+lake),13,17,0.585,0.789,0.162,1.0,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,4,rule: last anomaly persists,12,23,0.09,0.034,0.125,0.484,rule: last anomaly persists,13,12,17,23,6.0,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,rule: last anomaly persists,12,23,0.09,0.034,0.125,0.484,rule: 12-mo mean anomaly,13,7,17,19,0.333,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,rule: last anomaly persists,12,23,0.09,0.034,0.125,0.484,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,4,rule: 12-mo mean anomaly,7,19,0.029,0.19,0.067,0.643,rule: last anomaly persists,13,12,17,23,6.0,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,rule: 12-mo mean anomaly,7,19,0.029,0.19,0.067,0.643,rule: 12-mo mean anomaly,13,7,17,19,0.333,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,rule: 12-mo mean anomaly,7,19,0.029,0.19,0.067,0.643,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,4,rule: seasonal average,19,4,0.003,0.038,0.538,0.962,rule: last anomaly persists,13,12,17,23,6.0,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,rule: seasonal average,19,4,0.003,0.038,0.538,0.962,rule: 12-mo mean anomaly,13,7,17,19,0.333,model better if a miss costs LESS than w* false alarms
+ext_malakal,4,rule: seasonal average,19,4,0.003,0.038,0.538,0.962,rule: seasonal average,13,19,17,4,2.167,model better if a miss costs MORE than w* false alarms
+ext_malakal,6,model (ar+lake),14,19,0.487,0.718,0.148,1.0,rule: last anomaly persists,14,11,19,24,1.667,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,model (ar+lake),14,19,0.487,0.718,0.148,1.0,rule: 12-mo mean anomaly,14,9,19,20,0.2,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,model (ar+lake),14,19,0.487,0.718,0.148,1.0,rule: seasonal average,14,19,19,4,3.0,model better if a miss costs MORE than w* false alarms
+ext_malakal,6,rule: last anomaly persists,11,24,0.041,0.035,0.1,0.48,rule: last anomaly persists,14,11,19,24,1.667,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,rule: last anomaly persists,11,24,0.041,0.035,0.1,0.48,rule: 12-mo mean anomaly,14,9,19,20,0.2,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,rule: last anomaly persists,11,24,0.041,0.035,0.1,0.48,rule: seasonal average,14,19,19,4,3.0,model better if a miss costs MORE than w* false alarms
+ext_malakal,6,rule: 12-mo mean anomaly,9,20,0.061,0.218,0.091,0.625,rule: last anomaly persists,14,11,19,24,1.667,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,rule: 12-mo mean anomaly,9,20,0.061,0.218,0.091,0.625,rule: 12-mo mean anomaly,14,9,19,20,0.2,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,rule: 12-mo mean anomaly,9,20,0.061,0.218,0.091,0.625,rule: seasonal average,14,19,19,4,3.0,model better if a miss costs MORE than w* false alarms
+ext_malakal,6,rule: seasonal average,19,4,0.003,0.059,0.5,0.966,rule: last anomaly persists,14,11,19,24,1.667,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,rule: seasonal average,19,4,0.003,0.059,0.5,0.966,rule: 12-mo mean anomaly,14,9,19,20,0.2,model better if a miss costs LESS than w* false alarms
+ext_malakal,6,rule: seasonal average,19,4,0.003,0.059,0.5,0.966,rule: seasonal average,14,19,19,4,3.0,model better if a miss costs MORE than w* false alarms
+q_mean,1,model (ar+lake),26,2,0.0,0.0,0.854,1.0,rule: last anomaly persists,26,12,2,11,0.643,model better if a miss costs LESS than w* false alarms
+q_mean,1,model (ar+lake),26,2,0.0,0.0,0.854,1.0,rule: 12-mo mean anomaly,26,19,2,7,0.714,model better if a miss costs LESS than w* false alarms
+q_mean,1,model (ar+lake),26,2,0.0,0.0,0.854,1.0,rule: seasonal average,26,23,2,8,2.0,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: last anomaly persists,12,11,1.0,0.917,0.273,0.727,rule: last anomaly persists,26,12,2,11,0.643,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: last anomaly persists,12,11,1.0,0.917,0.273,0.727,rule: 12-mo mean anomaly,26,19,2,7,0.714,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: last anomaly persists,12,11,1.0,0.917,0.273,0.727,rule: seasonal average,26,23,2,8,2.0,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: 12-mo mean anomaly,19,7,0.029,0.085,0.474,0.923,rule: last anomaly persists,26,12,2,11,0.643,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: 12-mo mean anomaly,19,7,0.029,0.085,0.474,0.923,rule: 12-mo mean anomaly,26,19,2,7,0.714,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: 12-mo mean anomaly,19,7,0.029,0.085,0.474,0.923,rule: seasonal average,26,23,2,8,2.0,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: seasonal average,23,8,0.011,0.088,0.469,0.936,rule: last anomaly persists,26,12,2,11,0.643,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: seasonal average,23,8,0.011,0.088,0.469,0.936,rule: 12-mo mean anomaly,26,19,2,7,0.714,model better if a miss costs LESS than w* false alarms
+q_mean,1,rule: seasonal average,23,8,0.011,0.088,0.469,0.936,rule: seasonal average,26,23,2,8,2.0,model better if a miss costs LESS than w* false alarms
+q_mean,2,model (ar+lake),24,2,0.0,0.0,0.808,1.0,rule: last anomaly persists,24,10,2,10,0.571,model better if a miss costs LESS than w* false alarms
+q_mean,2,model (ar+lake),24,2,0.0,0.0,0.808,1.0,rule: 12-mo mean anomaly,24,19,2,9,1.4,model better if a miss costs LESS than w* false alarms
+q_mean,2,model (ar+lake),24,2,0.0,0.0,0.808,1.0,rule: seasonal average,24,23,2,8,6.0,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: last anomaly persists,10,10,1.0,1.0,0.2,0.783,rule: last anomaly persists,24,10,2,10,0.571,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: last anomaly persists,10,10,1.0,1.0,0.2,0.783,rule: 12-mo mean anomaly,24,19,2,9,1.4,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: last anomaly persists,10,10,1.0,1.0,0.2,0.783,rule: seasonal average,24,23,2,8,6.0,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: 12-mo mean anomaly,19,9,0.087,0.201,0.412,0.897,rule: last anomaly persists,24,10,2,10,0.571,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: 12-mo mean anomaly,19,9,0.087,0.201,0.412,0.897,rule: 12-mo mean anomaly,24,19,2,9,1.4,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: 12-mo mean anomaly,19,9,0.087,0.201,0.412,0.897,rule: seasonal average,24,23,2,8,6.0,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: seasonal average,23,8,0.011,0.086,0.467,0.936,rule: last anomaly persists,24,10,2,10,0.571,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: seasonal average,23,8,0.011,0.086,0.467,0.936,rule: 12-mo mean anomaly,24,19,2,9,1.4,model better if a miss costs LESS than w* false alarms
+q_mean,2,rule: seasonal average,23,8,0.011,0.086,0.467,0.936,rule: seasonal average,24,23,2,8,6.0,model better if a miss costs LESS than w* false alarms
+q_mean,3,model (ar+lake),23,3,0.0,0.006,0.667,1.0,rule: last anomaly persists,23,15,3,12,1.125,model better if a miss costs LESS than w* false alarms
+q_mean,3,model (ar+lake),23,3,0.0,0.006,0.667,1.0,rule: 12-mo mean anomaly,23,18,3,8,1.0,model better if a miss costs LESS than w* false alarms
+q_mean,3,model (ar+lake),23,3,0.0,0.006,0.667,1.0,rule: seasonal average,23,23,3,8,,model better at any cost ratio
+q_mean,3,rule: last anomaly persists,15,12,0.701,0.692,0.292,0.8,rule: last anomaly persists,23,15,3,12,1.125,model better if a miss costs LESS than w* false alarms
+q_mean,3,rule: last anomaly persists,15,12,0.701,0.692,0.292,0.8,rule: 12-mo mean anomaly,23,18,3,8,1.0,model better if a miss costs LESS than w* false alarms
+q_mean,3,rule: last anomaly persists,15,12,0.701,0.692,0.292,0.8,rule: seasonal average,23,23,3,8,,model better at any cost ratio
+q_mean,3,rule: 12-mo mean anomaly,18,8,0.076,0.187,0.4,0.936,rule: last anomaly persists,23,15,3,12,1.125,model better if a miss costs LESS than w* false alarms
+q_mean,3,rule: 12-mo mean anomaly,18,8,0.076,0.187,0.4,0.936,rule: 12-mo mean anomaly,23,18,3,8,1.0,model better if a miss costs LESS than w* false alarms
+q_mean,3,rule: 12-mo mean anomaly,18,8,0.076,0.187,0.4,0.936,rule: seasonal average,23,23,3,8,,model better at any cost ratio
+q_mean,3,rule: seasonal average,23,8,0.011,0.085,0.476,0.939,rule: last anomaly persists,23,15,3,12,1.125,model better if a miss costs LESS than w* false alarms
+q_mean,3,rule: seasonal average,23,8,0.011,0.085,0.476,0.939,rule: 12-mo mean anomaly,23,18,3,8,1.0,model better if a miss costs LESS than w* false alarms
+q_mean,3,rule: seasonal average,23,8,0.011,0.085,0.476,0.939,rule: seasonal average,23,23,3,8,,model better at any cost ratio
+q_mean,4,model (ar+lake),30,2,0.0,0.0,0.839,1.0,rule: last anomaly persists,30,15,2,14,0.8,model better if a miss costs LESS than w* false alarms
+q_mean,4,model (ar+lake),30,2,0.0,0.0,0.839,1.0,rule: 12-mo mean anomaly,30,17,2,7,0.385,model better if a miss costs LESS than w* false alarms
+q_mean,4,model (ar+lake),30,2,0.0,0.0,0.839,1.0,rule: seasonal average,30,23,2,8,0.857,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: last anomaly persists,15,14,1.0,0.97,0.241,0.784,rule: last anomaly persists,30,15,2,14,0.8,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: last anomaly persists,15,14,1.0,0.97,0.241,0.784,rule: 12-mo mean anomaly,30,17,2,7,0.385,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: last anomaly persists,15,14,1.0,0.97,0.241,0.784,rule: seasonal average,30,23,2,8,0.857,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: 12-mo mean anomaly,17,7,0.064,0.15,0.424,0.939,rule: last anomaly persists,30,15,2,14,0.8,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: 12-mo mean anomaly,17,7,0.064,0.15,0.424,0.939,rule: 12-mo mean anomaly,30,17,2,7,0.385,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: 12-mo mean anomaly,17,7,0.064,0.15,0.424,0.939,rule: seasonal average,30,23,2,8,0.857,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: seasonal average,23,8,0.011,0.088,0.471,0.939,rule: last anomaly persists,30,15,2,14,0.8,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: seasonal average,23,8,0.011,0.088,0.471,0.939,rule: 12-mo mean anomaly,30,17,2,7,0.385,model better if a miss costs LESS than w* false alarms
+q_mean,4,rule: seasonal average,23,8,0.011,0.088,0.471,0.939,rule: seasonal average,30,23,2,8,0.857,model better if a miss costs LESS than w* false alarms
+q_mean,6,model (ar+lake),33,4,0.0,0.001,0.724,1.0,rule: last anomaly persists,33,16,4,11,0.412,model better if a miss costs LESS than w* false alarms
+q_mean,6,model (ar+lake),33,4,0.0,0.001,0.724,1.0,rule: 12-mo mean anomaly,33,19,4,8,0.286,model better if a miss costs LESS than w* false alarms
+q_mean,6,model (ar+lake),33,4,0.0,0.001,0.724,1.0,rule: seasonal average,33,23,4,8,0.4,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: last anomaly persists,16,11,0.442,0.589,0.292,0.853,rule: last anomaly persists,33,16,4,11,0.412,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: last anomaly persists,16,11,0.442,0.589,0.292,0.853,rule: 12-mo mean anomaly,33,19,4,8,0.286,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: last anomaly persists,16,11,0.442,0.589,0.292,0.853,rule: seasonal average,33,23,4,8,0.4,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: 12-mo mean anomaly,19,8,0.052,0.23,0.385,0.9,rule: last anomaly persists,33,16,4,11,0.412,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: 12-mo mean anomaly,19,8,0.052,0.23,0.385,0.9,rule: 12-mo mean anomaly,33,19,4,8,0.286,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: 12-mo mean anomaly,19,8,0.052,0.23,0.385,0.9,rule: seasonal average,33,23,4,8,0.4,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: seasonal average,23,8,0.011,0.101,0.462,0.938,rule: last anomaly persists,33,16,4,11,0.412,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: seasonal average,23,8,0.011,0.101,0.462,0.938,rule: 12-mo mean anomaly,33,19,4,8,0.286,model better if a miss costs LESS than w* false alarms
+q_mean,6,rule: seasonal average,23,8,0.011,0.101,0.462,0.938,rule: seasonal average,33,23,4,8,0.4,model better if a miss costs LESS than w* false alarms
