@@ -1,8 +1,0 @@
-# extra packages for flood_drivers (on top of the course requirements.txt)
-scikit-learn
-joblib
-netCDF4
-dask
-pyarrow
-streamlit
-plotly
